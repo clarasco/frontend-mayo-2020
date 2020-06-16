@@ -12,9 +12,13 @@
 
              .questions {background-color: mediumturquoise; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; padding: 60px;border-radius: 10px;}
             
-            .h3 {font-weight: 200;}
+            h3 {font-weight: 200;}
 
-            .h4 {font-weight:bolder}
+            h4 {font-weight:bolder}
+
+            input:invalid {
+  background-color: red;
+
          </style>
     </head>
     <body>
@@ -50,7 +54,7 @@
                       <label for="directphone"><h3>Tu teléfono de contacto:</h3></label>
                       <input id="directphone"
                       type="tel"
-                      input:invalid {
+                      style=input:invalid {
                         border-color: #C00000;
                       }required
                       name= "directphone">
@@ -59,7 +63,7 @@
                     <label for="email"><h3>Tu e-mail:</h3></label>
                       <input id="email"
                       type="email"
-                      input:invalid {
+                      style=input:invalid {
                         border-color: #C00000;
                       }>
                       <br>
@@ -87,9 +91,9 @@
                       </fieldset>
                       <br>
                       <label for="sitrabajo">
-                      <input type="checkbox" name="sitrabajo" id="check" value="true"> <h3 class="afirmacion">Yo trabajo actualmente </h3></label>  
+                      <input type="checkbox" name="sitrabajo" id="sitrabajo" value="true"> <h3 class="afirmacion">Yo trabajo actualmente </h3></label>  
                       <br>
-                    <button style="backgorund-color:orchid" type="submit"> </button> <h4>Guardar</h4></button>
+                    <button style="backgorund-color:orchid" type="submit"> <h4>Guardar</h4></button>
                   </form> 
                 </section>
             </article>
